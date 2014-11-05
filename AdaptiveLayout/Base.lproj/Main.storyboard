@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AdaptiveLayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="motorbecane" translatesAutoresizingMaskIntoConstraints="NO" id="fbu-vP-cHK">
+                                <rect key="frame" x="0.0" y="240" width="600" height="360"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U06-jV-Efm" userLabel="DescriptionView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="240"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2010 Motobecane Grand Sprint" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3fw-x6-nPn">
+                                        <rect key="frame" x="20" y="40" width="560" height="59"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="50"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="widthClass=compact">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="30"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l9W-hv-6Dh">
+                                        <rect key="frame" x="20" y="119" width="560" height="89"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="widthClass=compact">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
+                                        </variation>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="focus" translatesAutoresizingMaskIntoConstraints="NO" id="IJq-Y8-0Ju">
+                                        <rect key="frame" x="450" y="108" width="150" height="132"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="39n-1p-pQt"/>
+                                            <constraint firstAttribute="height" constant="132" id="ZUV-GH-wOe"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="3fw-x6-nPn" firstAttribute="leading" secondItem="U06-jV-Efm" secondAttribute="leading" constant="20" id="9Xu-F0-YlB"/>
+                                    <constraint firstAttribute="trailing" secondItem="l9W-hv-6Dh" secondAttribute="trailing" constant="20" id="9cn-Co-wNx"/>
+                                    <constraint firstAttribute="bottom" secondItem="IJq-Y8-0Ju" secondAttribute="bottom" id="Rny-jM-cCU"/>
+                                    <constraint firstItem="l9W-hv-6Dh" firstAttribute="leading" secondItem="U06-jV-Efm" secondAttribute="leading" constant="20" id="TQq-Er-Kdh"/>
+                                    <constraint firstAttribute="trailing" secondItem="3fw-x6-nPn" secondAttribute="trailing" constant="20" id="VSZ-7I-d9S"/>
+                                    <constraint firstItem="3fw-x6-nPn" firstAttribute="top" secondItem="U06-jV-Efm" secondAttribute="top" constant="40" id="h2A-4A-3cQ"/>
+                                    <constraint firstItem="l9W-hv-6Dh" firstAttribute="top" secondItem="3fw-x6-nPn" secondAttribute="bottom" constant="20" id="sKO-AG-d1T"/>
+                                    <constraint firstAttribute="trailing" secondItem="IJq-Y8-0Ju" secondAttribute="trailing" id="zhj-kx-8Xc"/>
+                                </constraints>
+                                <variation key="heightClass=compact">
+                                    <mask key="subviews">
+                                        <exclude reference="IJq-Y8-0Ju"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="subviews">
+                                        <exclude reference="IJq-Y8-0Ju"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="U06-jV-Efm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="0gG-c3-OVb"/>
+                            <constraint firstItem="U06-jV-Efm" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="1PM-rW-MGA"/>
+                            <constraint firstItem="U06-jV-Efm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6iA-uJ-yfM"/>
+                            <constraint firstItem="fbu-vP-cHK" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="97v-NX-qRL"/>
+                            <constraint firstItem="fbu-vP-cHK" firstAttribute="top" secondItem="U06-jV-Efm" secondAttribute="bottom" id="EiR-8d-mEa"/>
+                            <constraint firstAttribute="trailing" secondItem="U06-jV-Efm" secondAttribute="trailing" id="Ihr-9z-gvr"/>
+                            <constraint firstItem="U06-jV-Efm" firstAttribute="leading" secondItem="fbu-vP-cHK" secondAttribute="trailing" id="Kgl-Di-SoI"/>
+                            <constraint firstAttribute="trailing" secondItem="fbu-vP-cHK" secondAttribute="trailing" id="MKH-iz-97s"/>
+                            <constraint firstAttribute="bottom" secondItem="fbu-vP-cHK" secondAttribute="bottom" id="bSX-r0-oX2"/>
+                            <constraint firstItem="fbu-vP-cHK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jBN-F3-dBg"/>
+                            <constraint firstAttribute="bottom" secondItem="U06-jV-Efm" secondAttribute="bottom" id="nji-PT-SXq"/>
+                            <constraint firstItem="fbu-vP-cHK" firstAttribute="top" secondItem="U06-jV-Efm" secondAttribute="bottom" id="qPw-f3-OCq"/>
+                            <constraint firstItem="fbu-vP-cHK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="sy9-iZ-Ude"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Kgl-Di-SoI"/>
+                                <exclude reference="nji-PT-SXq"/>
+                                <exclude reference="97v-NX-qRL"/>
+                                <exclude reference="EiR-8d-mEa"/>
+                                <exclude reference="sy9-iZ-Ude"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="1PM-rW-MGA"/>
+                                <exclude reference="6iA-uJ-yfM"/>
+                                <include reference="Kgl-Di-SoI"/>
+                                <include reference="nji-PT-SXq"/>
+                                <include reference="97v-NX-qRL"/>
+                                <exclude reference="EiR-8d-mEa"/>
+                                <exclude reference="MKH-iz-97s"/>
+                                <exclude reference="qPw-f3-OCq"/>
+                                <include reference="sy9-iZ-Ude"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="focus" width="300" height="265"/>
+        <image name="motorbecane" width="300" height="178"/>
+    </resources>
+</document>
